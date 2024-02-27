@@ -22,11 +22,12 @@ inputForm.addEventListener('submit', function () {
     id: `book-${+new Date()}`,
     title,
     author,
-    year,
+    year: parseInt(year),
     isComplete
   }
-
+  console.log(data);
   putData(data);
+  setTimeout(function () { alert('Buku berhasil ditambahkan!'); }, 100);
   event.preventDefault();
 })
 
@@ -122,6 +123,7 @@ const changeBookStatus = (id, status) => {
     }
   };
   saveData(books);
+  setTimeout(function () { alert('Berhasil!'); }, 100);
   return;
 }
 
