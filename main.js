@@ -165,4 +165,5 @@ const deleteData = (id) => {
     }
   }
   saveData(books);
+  setTimeout(function () { alert('Berhasil dihapus!'); }, 100);
 }
