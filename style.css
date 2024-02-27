@@ -194,9 +194,3 @@ input[type="number"] {
   background-color: #dc3545;
   color: #ffffff;
 }
-
-@media (max-width: 600px) {
-  main {
-    padding: 10px;
-  }
-}
